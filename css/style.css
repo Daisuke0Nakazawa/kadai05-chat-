@@ -1,0 +1,123 @@
+
+
+.wrapup{
+    
+    width: 390px;
+    height: 844px;
+    position: relative;
+    border: 2px solid grey;
+    border-radius: 4px;
+    padding:0;
+    background: #7494c0;
+    overflow: hidden;
+    margin: 20px auto;
+    
+ 
+}
+
+.header{
+    display: flex;
+   
+    position: absolute;
+    top : 0px;
+    height: 25px;
+    
+}
+
+.pageback{
+    width : 20%;
+    height: 100%;
+}
+.title{
+    width: 80%;
+    text-align: center;
+    height: 100%;
+    margin-left: 15px;
+}
+
+
+
+
+.title p{
+    text-align: center;
+    font-size : 16px ;
+    font-weight: bold;
+   
+}
+
+.output{
+    margin-top: 25px;
+    overflow: scroll;
+    
+    position: absolute;
+    top: 25px;
+    bottom: 25px;
+    width: 100%;
+
+}
+
+/* スクロールバー非表示 */
+.output::-webkit-scrollbar{
+    display: none;
+}
+
+
+/* 背景はテキストサイズに合わせる、70%いったら改行 */
+.msg:nth-child(odd){
+    max-width: 70%;
+    width: fit-content;
+    margin-left: auto;
+     background-color: greenyellow;
+     border-radius: 7px;
+     text-align: right;
+     padding :0 5px;
+         
+        
+}
+
+ .msg:nth-child(even){ 
+    background-color: greenyellow;
+    border-radius: 7px;
+    width: fit-content;
+    max-width: 70%;
+    padding :0 5px;
+    
+} 
+/* テキストエリアと送信ボタン */
+.msg-area{
+    width: 100%;
+    display: flex;
+    height:30px ;
+    position: absolute;
+    bottom: 0px;
+    
+}
+#uname{
+    display: none;
+}
+
+.textarea{
+    width:80%;
+    border-radius: 4px;
+    
+}
+#text{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd; /* 枠線をつけて領域を分かりやすく */
+    box-sizing: border-box;
+}
+
+.btnarea{
+    width: 20%;
+    height: 30px;
+}
+
+#send{
+ width: 100%;
+ background: white;
+ color:blue;
+
+ font-weight: bold;
+ border: 0;
+}
